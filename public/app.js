@@ -15,11 +15,11 @@ function postData(data) {
     .catch(err => {
       console.log('ERROR: ' + err)
     })
-}
+};
 
 function convertToJSON() {
   const obj = {};
   obj.title = title.value;
   obj.body = body.value;
   postData(obj);
-}
+};
